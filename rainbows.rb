@@ -39,8 +39,14 @@ rainbow = [
   {violet: { r:143, g:0,   b:255} }
 ]
 
+# rainbow.each do |color|
+#   color.each do |key, value|
+#   puts "#{key}".colorize("#{key}".to_sym)
+# end
+# end
+
 rainbow.each do |color|
   color.each do |key, value|
-  puts "#{key}".colorize("#{key}".to_sym)
+  puts "#{key}".colorize(key)
 end
 end
